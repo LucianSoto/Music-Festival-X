@@ -1,0 +1,526 @@
+
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:  sans-serif, arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: seagreen;
+}
+
+h1 {
+    font-family: 'East Sea Dokdo', sans-serif;
+    font-size: 10rem;
+    text-shadow: 3px 5px black;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h2 {
+    font-family: 'East Sea Dokdo', sans-serif;
+    font-size: 3rem;
+    color: gold;
+    text-shadow: 2px 2px black;
+}
+
+h3 {
+    font-family: 'Syne Tactile', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3, h4 {
+    color: white;
+    text-shadow: 1px 1px darkgray;
+}
+
+/* NAV BAR */
+nav {
+    background: linear-gradient(
+        0deg,
+        rgba(64, 213, 131, 0.96),
+        rgb(47, 106, 232)
+    );
+    border-bottom: 2px solid black;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100px;
+    z-index: 100;
+    transform: translateY(0%)
+}
+
+.nav {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 3.5rem;
+    color: black;
+    display: flex;
+    text-shadow: 2px 2px gold;
+    padding-left: 2.5rem;
+}
+
+.nav i {
+    font-size: 2.9rem;
+    color:#86f3cfd9;    
+}
+
+.toggle {
+    background-color: rgba(26, 24, 11, 0.481);
+    border-radius: 5px;
+    padding: .5rem;  
+}
+
+.toggle i {
+    color: gold;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 0.5rem;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: 'East Sea Dokdo', sans-serif, arial;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px gold;
+}
+
+nav ul li a:hover {
+    color: seagreen;
+}
+
+.nav-toggle {
+    display: none;
+    transition: 0.3s ease; /* same thing as below */
+}
+
+.show-toggle {
+    display: flex;
+    transition: 0.3s ease; /*  hwo to make it ease in? */
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-toggle {
+        flex-direction: column;
+    }
+}
+
+/* GREETING */
+
+#container1 {
+    margin-top: 6.5rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(
+        180deg,
+        rgba(75, 145, 133, .5),
+        rgb(7, 7, 39)
+    ),
+  url(./jungle.img/FreeVector-Jungle-Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.welcome {
+    margin-top: 5rem;
+}
+
+.title .logo { 
+   padding-bottom: 0rem;
+}
+
+.title { 
+    color: gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+}
+
+.vid {
+    padding-bottom: 3rem;
+}
+
+.bill-div p{
+    color: white;
+    font-size: 2.5rem;
+    font-style: italic;
+    text-shadow: 2px 2px black;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+#bill-name {
+    color: gray;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    font-style: bold;
+    padding-bottom: 2rem;
+}
+
+.tickets {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 5rem;
+    margin: 0;
+    padding: 0;
+    transform: translate(-20%, -20%);
+}
+
+.tickets span {
+    display: table-cell;
+    position: relative;
+    text-decoration: none;
+    color: gold;
+    font-family: 'East Sea Dokdo', sans-serif;
+    font-size: 3rem;
+    text-shadow: 2px 2px gray;
+    
+}
+
+#tickets:hover span {
+    -webkit-animation: moving 5s infinite; 
+    position:relative;
+    animation: move-text .5s forwards;
+    cursor: pointer;
+}
+
+@keyframes move-text {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30%);
+    }
+    0% {
+        transform: translateY(0);
+    }
+}
+
+#tickets span:nth-child(1) {
+    animation-delay: .1s;
+}
+#tickets span:nth-child(2) {
+    animation-delay: .1s;
+}
+#tickets span:nth-child(3) {
+    animation-delay: .3s;
+}
+#tickets span:nth-child(4) {
+    animation-delay: .4s;
+}
+#tickets span:nth-child(5) {
+    animation-delay: .5s;
+}
+#tickets span:nth-child(6) {
+    animation-delay: .6s;
+}
+#tickets span:nth-child(7) {
+    animation-delay: .7s;
+}
+#tickets span:nth-child(8) {
+    animation-delay: .8s;
+}
+#tickets span:nth-child(9) {
+    animation-delay: .9s;
+}
+#tickets span:nth-child(10) {
+    animation-delay: .10s;
+}
+#tickets span:nth-child(11) {
+    animation-delay: .11s;
+}
+#tickets span:nth-child(12) {
+    animation-delay: .12s;
+}
+#tickets span:nth-child(13) {
+    animation-delay: .13s;
+}
+#tickets span:nth-child(14) {
+    animation-delay: .14s;
+}
+#tickets span:nth-child(15) {
+    animation-delay: .15s;
+}
+
+/*
+Secont Part of page
+*/
+.container2 { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(
+        180deg,
+        rgb(7, 7, 39, .999),
+        rgba(11, 22, 49, 0.946)
+    ),
+    url(./jungle.img/FreeVector-Jungle-Background.jpg);
+    background: scaleY(-1);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    border-bottom: 20px solid black;
+}
+
+.news-head {
+    margin-top: 3rem;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.news-cont {
+    background-color: black;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column; 
+}
+
+.news {
+    color: white;
+    font-size: 2.5rem;
+    align-items: center;
+    text-align: center;
+    text-shadow: 3px 1px black;
+    margin-bottom: 2rem;
+}
+
+.news-cont p {
+    margin-top: .75rem;
+    color: white;
+    font-size: 1.35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 2rem;
+    
+}
+
+.btn{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    border: solid gray 1px;
+    border-radius: 3px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.btn:hover {
+    transition: 1s;
+    background: darkgray;
+    
+}
+
+#dino {
+    
+   /*
+        change color of dino???
+   */
+}
+
+.email {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80;
+    padding-bottom: 5rem;
+}
+
+.email p {
+    display: flex;
+    width: 70%;
+    color: white;
+    font-family: 'Syne Tactile', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    text-shadow: 1px 1px seagreen;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.enteremail {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"] {
+    background-color: black;
+    color: white;
+    width: 65%;
+    height: 50px;
+    padding-right: 50px;
+    border: 2px solid rgb(55, 194, 141);
+    font-family: cursive;
+    font-size: 1.5rem;
+}
+
+input[type="submit"]{
+    margin-left: -105px;
+    height: 40px;
+    width: 100px;
+    background: rgb(55, 194, 141);
+    color: black;
+    border: 1px solid rgb(55, 194, 141);
+    font-family: cursive;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+button {
+    height: 3rem;
+    
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Slides */
+
+.pics {
+    background-image: linear-gradient(
+        0deg,
+        rgba(70, 96, 163, 0.713),
+        rgba(11, 22, 49, 0.946)
+    ),
+        url(https://www.crushpixel.com/big-static14/preview4/seamless-pattern-with-tropical-leaves-1545337.jpg);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 100%;
+}
+
+.mySlides {
+    position: relative;
+    width: 80%;
+    margin: 40px auto;
+    display: table;
+}
+
+.number {
+    position: absolute;
+    margin: 20px;
+    visibility:hidden;
+}
+
+.text {
+    visibility: hidden;
+}
+
+.prev, .next {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(50, 50, 50, 0.3);
+    border-radius: 25% 25%;
+    /*HIDDEN*/
+    visibility: hidden;
+}
+
+.prev {
+    margin-left: 5rem;
+
+}
+
+.next {
+    margin-right: 20rem;
+}
+
+
+
+.dot-cont {
+    text-align: center;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+    
+}
+
+.dot.active {
+    background-color: orange;
+}
+
+.dot:hover {
+    background-color: lightgray;
+}
+
+/* FOOTER */
+
+footer {
+    border-top: 1rem solid black;
+    border-bottom: 1rem solid black;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25vh;
+    background-image: linear-gradient(
+        180deg,
+        rgba(187, 209, 161, 0.9),
+        rgba(29, 29, 112, 0.5)
+    ),
+  url(./jungle.img/jungle-silhouette-banner-vector.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
