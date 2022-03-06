@@ -59,13 +59,13 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100px;
+    height: 60px;
     z-index: 100;
     transform: translateY(0%)
 }
 
 .nav {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -73,15 +73,18 @@ nav {
 }
 
 nav .logo {
+    font-family: 'East Sea Dokdo', sans-serif;
     font-size: 3.5rem;
     color: black;
     display: flex;
+    justify-content: center;
+    margin-top: -10px;
     text-shadow: 2px 2px gold;
     padding-left: 2.5rem;
 }
 
 .nav i {
-    font-size: 2.9rem;
+    font-size: 30px;
     color:#86f3cfd9;    
 }
 
@@ -136,7 +139,7 @@ nav ul li a:hover {
 /* GREETING */
 
 #container1 {
-    margin-top: 6.5rem;
+    margin-top: 0px;
     padding-top: 5rem;
     padding-bottom: 3rem;
     display: flex;
@@ -155,11 +158,13 @@ nav ul li a:hover {
 }
 
 .welcome {
-    margin-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 0;
 }
 
 .title .logo { 
    padding-bottom: 0rem;
+   margin-top: -50px;
 }
 
 .title { 
@@ -168,12 +173,13 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    margin-top: -30px;
 }
 
 .vid {
-    padding-bottom: 3rem;
+    /* padding-bottom: 2rem; */
+    margin-bottom: 2rem;
 }
 
 .bill-div p{
