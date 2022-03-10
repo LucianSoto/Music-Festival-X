@@ -89,11 +89,15 @@ nav {
 
 .nav img {
     height: 80%;
+    margin-right: 20px;
 }
 
 .nav-menu{
-    display: flex
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
 
 .nav i {
     font-size: 30px;
@@ -108,6 +112,33 @@ nav {
 
 .toggle i {
     color: gold;
+}
+
+.nav-button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "Fjalla One", sans-serif;
+    border-left: 2px solid white;
+    padding: 12px;
+    height: 70%;
+}
+
+.nav-dd {
+    display: none;
+}
+
+.icons-cont {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    margin-left: 20px;
+}
+
+.icons-cont a {
+    padding: 5px;
 }
 
 #burger {
@@ -179,6 +210,12 @@ nav ul li a:hover {
     margin-bottom: 0;
 }
 
+.welcome-logo {
+    height: 400px;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
 .title .logo { 
    padding-bottom: 0rem;
    margin-top: -50px;
@@ -222,10 +259,9 @@ nav ul li a:hover {
     flex-direction: row;
     justify-content: flex-end;
     width: 100%;
-    padding-right: 5rem;
     margin: 0;
-    padding: 0;
-    transform: translate(-20%, -20%);
+    padding: 15px;
+    font-size: 25px;
 }
 
 .tickets span {
