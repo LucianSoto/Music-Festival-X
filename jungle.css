@@ -528,12 +528,15 @@ button:hover {
     padding-top: 5rem;
     padding-bottom: 5rem;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .mySlides {
     position: relative;
-    width: 80%;
-    margin: 40px auto;
+    width: 65%;
+    margin: 30px 0 5px 0;
     display: table;
 }
 
@@ -559,6 +562,7 @@ button:hover {
     border-radius: 25% 25%;
     /*HIDDEN*/
     visibility: hidden;
+    display: none;
 }
 
 .prev {
@@ -598,7 +602,7 @@ button:hover {
 footer {
     border-top: 1rem solid black;
     border-bottom: 1rem solid black;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -613,6 +617,10 @@ footer {
   url(./jungle.img/jungle-silhouette-banner-vector.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.footer h1 {
+    margin-top: -10px;
 }
 
 .copyrights {
